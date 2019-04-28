@@ -279,6 +279,12 @@ func saveEtcdKey(c *gin.Context, isPut bool) {
 			err = cli.Put(req.FullDir, etcdv3.DEFAULT_DIR_VALUE, !isPut)
 		}
 	} else {
+		var i interface{}
+		if err = json.Unmarshal([]byte(req.Value), i); err != nil {
+			err = errors.New("put value error, not vaild json")
+			return
+		}
+		
 		err = cli.Put(req.FullDir, req.Value, !isPut)
 	}
 

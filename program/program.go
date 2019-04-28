@@ -7,8 +7,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/shiguanghuxian/etcd-manage/program/config"
-	"github.com/shiguanghuxian/etcd-manage/program/logger"
+	"github.com/dingzewe/etcd-manage/program/config"
+	"github.com/dingzewe/etcd-manage/program/logger"
 )
 
 // Program 主程序

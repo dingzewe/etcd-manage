@@ -12,10 +12,10 @@ import (
 	"time"
 
 	gin "github.com/gin-gonic/gin"
-	"github.com/shiguanghuxian/etcd-manage/program/common"
-	"github.com/shiguanghuxian/etcd-manage/program/config"
-	"github.com/shiguanghuxian/etcd-manage/program/etcdv3"
-	"github.com/shiguanghuxian/etcd-manage/program/logger"
+	"github.com/dingzewe/etcd-manage/program/common"
+	"github.com/dingzewe/etcd-manage/program/config"
+	"github.com/dingzewe/etcd-manage/program/etcdv3"
+	"github.com/dingzewe/etcd-manage/program/logger"
 )
 
 // V1 v1 版接口
@@ -279,12 +279,13 @@ func saveEtcdKey(c *gin.Context, isPut bool) {
 			err = cli.Put(req.FullDir, etcdv3.DEFAULT_DIR_VALUE, !isPut)
 		}
 	} else {
+		saveLog(c, fmt.Sprintf("save value %s", req.Value))
 		var i interface{}
 		if err = json.Unmarshal([]byte(req.Value), i); err != nil {
 			err = errors.New("put value error, not vaild json")
 			return
 		}
-		
+
 		err = cli.Put(req.FullDir, req.Value, !isPut)
 	}
 

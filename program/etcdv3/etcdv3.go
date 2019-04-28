@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/shiguanghuxian/etcd-manage/program/config"
+	"github.com/dingzewe/etcd-manage/program/config"
 	"go.etcd.io/etcd/clientv3"
 	"go.etcd.io/etcd/pkg/transport"
 )

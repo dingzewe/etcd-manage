@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/shiguanghuxian/etcd-manage/program"
+	"github.com/dingzewe/etcd-manage/program"
 )
 
 func main() {

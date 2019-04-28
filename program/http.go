@@ -9,9 +9,9 @@ import (
 
 	"github.com/gin-gonic/autotls"
 	gin "github.com/gin-gonic/gin"
-	"github.com/shiguanghuxian/etcd-manage/program/config"
-	"github.com/shiguanghuxian/etcd-manage/program/etcdv3"
-	"github.com/shiguanghuxian/etcd-manage/program/v1"
+	"github.com/dingzewe/etcd-manage/program/config"
+	"github.com/dingzewe/etcd-manage/program/etcdv3"
+	"github.com/dingzewe/etcd-manage/program/v1"
 )
 
 // http 服务

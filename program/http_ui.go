@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	gin "github.com/gin-gonic/gin"
-	"github.com/shiguanghuxian/etcd-manage/program/logger"
-	"github.com/shiguanghuxian/etcd-manage/tpls"
+	"github.com/dingzewe/etcd-manage/program/logger"
+	"github.com/dingzewe/etcd-manage/tpls"
 )
 
 // ui 界面

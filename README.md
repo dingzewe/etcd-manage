@@ -86,7 +86,7 @@ demo地址： [Demo](http://140.143.234.132:10280/ui/#/keys)
 > 
 > 4. 安装依赖，编译项目
 >
->  		cd $GOPATH/github.com/shiguanghuxian/etcd-manage/static
+>  		cd $GOPATH/github.com/dingzewe/etcd-manage/static
 > 
 > 		cnpm install && npm run build
 > 
